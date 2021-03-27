@@ -12,3 +12,5 @@ Example usage:
 filerewrite should not be used on live file systems as there is an obvious race between reading the data and writing the data back.
 
 It also makes little sense to use filerewrite on ZFS file systems with existing snapshots as the rewritten blocks are not going to be freed until the last snapshot referencing them is destroyed.
+
+filerewrite should work on FreeBSD, Linux, macOS and pretty much any other pretty modern UNIX-like operating system.
